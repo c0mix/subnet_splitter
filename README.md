@@ -5,6 +5,7 @@ The script takes as inputs:
 - a file with a list of subnets (-i --input)
 - a number that represents the subnet dimension you want to obtain (-s --size)
 - an output file (-o --output)
+
 Input file example:
 ```
 $ cat /tmp/input_big.txt
