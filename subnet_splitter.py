@@ -58,7 +58,7 @@ for line in input.readlines():
 		sub_size = int(ipaddress.ip_network(line.strip()).prefixlen)
 		# the input subnet is smaller than the one we want as output. NO SPLIT REQUIRED HERE
 		if sub_size >= int(args.size):
-			output.write(str(ipaddress.ip_network(line.strip())))
+			output.write(str(ipaddress.ip_network(line.strip()))+'\n')
 			if args.verbose:
 				print(str(ipaddress.ip_network(line.strip())))
 
